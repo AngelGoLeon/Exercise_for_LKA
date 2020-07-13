@@ -322,6 +322,7 @@ h5#Normal {
     align-items: center;
     box-sizing: content-box;
     position: absolute;
+    backface-visibility: hidden;
     width: 100%;
     height: 100%;
 }
