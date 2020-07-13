@@ -39,6 +39,20 @@
     }
 }
 
+@media screen and (max-width: 499px) {
+    h1 {
+        width: 500px;
+        font-size: 22px;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 767px) {
+    h1 {
+        width: 500px;
+        font-size: 26px;
+    }
+}
+
 @media screen and (max-width: 767px) {
     .contenedorApartados {
         height: 1230px;
@@ -65,9 +79,6 @@
     }
     .tituloSmall>h5 {
         font-size: 13px;
-    }
-    h1 {
-        font-size: 26px;
     }
     h5#Normal {
         margin-top: 15px;
