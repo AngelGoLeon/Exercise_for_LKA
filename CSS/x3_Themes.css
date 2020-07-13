@@ -1,0 +1,409 @@
+@font-face {
+    font-family: TeXGyreAdventor;
+    font-weight: 400;
+    src: url(../Z_TeX-Gyre-Adventor/texgyreadventor-regular.otf);
+}
+
+@font-face {
+    font-family: TeXGyreAdventor;
+    font-weight: 600;
+    src: url(../Z_TeX-Gyre-Adventor/texgyreadventor-bold.otf);
+}
+
+@font-face {
+    font-family: Now;
+    font-weight: 400;
+    src: url(../Z_now/Now-Regular.otf);
+}
+
+@font-face {
+    font-family: Now;
+    font-weight: 600;
+    src: url(../Z_now/Now-Bold.otf);
+}
+
+@media screen and (min-width: 992px) {
+    html {
+        font-size: 14px;
+        line-height: 1.9;
+    }
+    h1 {
+        font-size: 58px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    html {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .contenedorApartados {
+        height: 1230px;
+    }
+    .Allseccion {
+        padding: 10% 5% 10% 5%;
+    }
+    section#Encabezados {
+        height: 14%;
+        width: 99%;
+    }
+    section#Servicios {
+        height: 85%;
+        width: 99%;
+    }
+    #ContenedorAllservicios {
+        flex-direction: column;
+        margin-top: 25px;
+    }
+    .flipCard {
+        height: 33%;
+        width: 99%;
+        margin: 8px 0px;
+    }
+    .tituloSmall>h5 {
+        font-size: 13px;
+    }
+    h1 {
+        font-size: 26px;
+    }
+    h5#Normal {
+        margin-top: 15px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .contenedorApartados {
+        height: 650px;
+    }
+    .Allseccion {
+        padding: 5% 4%;
+    }
+    #ContenedorAllservicios {
+        flex-direction: row;
+        margin-top: 50px;
+    }
+    .flipCard {
+        height: 100%;
+        width: 33%;
+    }
+    .tituloSmall {
+        height: 25%;
+        width: 100%;
+    }
+    .tituloBig {
+        height: 49%;
+        width: 100%;
+    }
+    .tituloSmall>h5 {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    section#Encabezados {
+        height: 25%;
+        width: 99%;
+    }
+    section#Servicios {
+        height: 70%;
+        width: 99%;
+    }
+    .tituloSmall {
+        height: 25%;
+        width: 100%;
+    }
+    .tituloBig {
+        height: 49%;
+        width: 100%;
+    }
+    h1 {
+        font-size: 38px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    section#Encabezados {
+        height: 34%;
+        width: 99%;
+    }
+    section#Servicios {
+        height: 65%;
+        width: 99%;
+    }
+    .tituloSmall {
+        height: 25%;
+        width: 100%;
+    }
+    .tituloBig {
+        height: 49%;
+        width: 100%;
+    }
+    h5#Normal {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1260px) {
+    #Uno {
+        margin: 0px 8px 0px 16px;
+    }
+    #Dos {
+        margin: 0px 16px;
+    }
+    #Tres {
+        margin: 0px 16px 0px 8px;
+    }
+}
+
+@media screen and (min-width: 1261px) {
+    .Allseccion {
+        padding: 5% 6%;
+    }
+    #Uno {
+        margin: 0px 24px 0px 12px;
+    }
+    #Dos {
+        margin: 0px 48px;
+    }
+    #Tres {
+        margin: 0px 12px 0px 24px;
+    }
+}
+
+
+/*---------------------------------G E N E R A L E S*/
+
+body {
+    font-size: 14px;
+}
+
+section.Allseccion,
+.contenedorApartados,
+section#Encabezados,
+#ContenedorEncabezados,
+.tituloBig,
+.tituloSmall,
+section#Servicios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section.Allseccion {
+    transition: border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.Allseccion:before,
+.Allseccion:after {
+    box-sizing: inherit;
+}
+
+.contenedorApartados {
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Now', sans-serif;
+    color: #000;
+}
+
+
+/*Color fondo de un apartado
+background: #FFF9CD;*/
+
+.contenedorApartados:before,
+.contenedorApartados:after {
+    /*Asegura que todos los elementos que esten dentro del contenedor
+      no sobrepacen sus limites aunque tengan paddings o borders*/
+    box-sizing: border-box;
+}
+
+
+/*------------------------S E C C I O N - E N C A B E C A D O S*/
+
+#ContenedorEncabezados {
+    height: 99%;
+    width: 99%;
+}
+
+.tituloBig {
+    box-sizing: border-box;
+    hyphens: manual;
+}
+
+.tituloBig>h1 {
+    width: 500px;
+    margin: 0;
+    font-family: 'TeXGyreAdventor', sans-serif;
+    font-weight: bold;
+    box-sizing: border-box;
+    hyphens: manual;
+    line-height: 1;
+    text-align: center;
+}
+
+.tituloSmall>h5 {
+    margin: 0;
+    font-family: 'TeXGyreAdventor', sans-serif;
+    box-sizing: border-box;
+    line-height: 1;
+}
+
+h5#TipoBoton {
+    padding: 11px 23px;
+    margin-bottom: 4px;
+    border-radius: 12px;
+    background-color: #CDF0FF;
+}
+
+h5#Normal {
+    color: rgba(0, 0, 0, 0.35);
+}
+
+
+/*---------------------------S E C C I O N - S E R V I C I O S*/
+
+#ContenedorAllservicios {
+    height: 99%;
+    width: 99%;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.flipCard {
+    perspective: 500px;
+}
+
+.servContent {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flipCard:hover .servContent {
+    transform: rotate3d(0, 1, 0, 180deg);
+}
+
+#Naranja {
+    background: #f7f3d1;
+}
+
+#Verde {
+    background: #dcfce2;
+}
+
+#Azul {
+    background: #e4f9fd;
+}
+
+.contentFront,
+.contentBack {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: content-box;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.contentBack {
+    background: rgb(129, 121, 120);
+    transform: rotate3d(0, 1, 0, 180deg);
+}
+
+.contenidoF,
+.contenidoB {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: content-box;
+}
+
+.contenidoF>h3,
+.contenidoF>h4,
+.contenidoF>p,
+.contenidoB>h3,
+.contenidoB>p,
+.contenidoB>div {
+    width: 82%;
+}
+
+.contenidoF>h3,
+.contenidoB>h3 {
+    font-size: 23px;
+    font-family: 'TeXGyreAdventor', sans-serif;
+    height: 25%;
+    line-height: 1.2;
+    margin: 1px;
+}
+
+.contenidoB>h3 {
+    color: white;
+}
+
+.contenidoF>h4 {
+    font-size: 18px;
+    font-family: 'TeXGyreAdventor', sans-serif;
+    height: 20%;
+    margin: 1px;
+}
+
+.contenidoF>p {
+    color: rgba(0, 0, 0, 0.7);
+    height: 40%;
+    margin: 5px 0px;
+}
+
+.contenidoB>p {
+    color: rgba(255, 255, 255, 0.65);
+    height: 40%;
+}
+
+.contenidoB>div {
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    height: 40px;
+    width: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1px;
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.21);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Now', sans-serif;
+    font-size: 11px;
+    color: white;
+    letter-spacing: 1px;
+    line-height: 1;
+    background: none;
+}
+
+button:hover {
+    transition: all 300ms;
+    cursor: pointer;
+    background-color: white;
+    color: rgba(0, 0, 0, 0.7);
+}
